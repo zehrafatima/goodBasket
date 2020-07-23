@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOMM! </title>
+    <script src="https://kit.fontawesome.com/fdd9920942.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            <img src="logo.png" alt="website logo"/>
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END-->
+    <!-- BEECH -->
+    <header class="beech">
+        <div class="banner">
+            <h5 class="banner-title">All the groceries you need!</h5>
+            <button onclick="prods()" class="shop banner-btn">Shop now</button>
+        </div>
+    </header>
+    <!-- BEECH END -->
+    <!-- products-->
+    <section class="products">
+        <div class="section-title">
+            <h2>VEGETABLES</h2>
+        </div>
+        <div class="products-center">
+            <!--single prod-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="./images/tomatoes.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="1">
+                        <i class="fas fa-shopping-cart">
+                        </i>
+                        Add to bag
+                    </button>
+                </div>
+                <h3>Tomatoes</h3>
+                <h4>$3/Kg</h4>
+            </article>
+            <!--end of single prod-->
+            
+        </div>
+    </section>
+    <!--end of products-->
+    <!-- cart-->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>Your cart</h2>
+            <div class="cart-content">
+            <!-- cart item-->
+            <!-- <div class="cart-item">
+                
+            </div> -->
+            <!-- end of cart item-->
+            </div>
+            <div class="cart-footer">
+                <h3>your total: $ <span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">clear cart</button>
+                <button class="clear-cart banner-btn" id="myBtn">Buy now!</button>
+        
+            </div>
+        </div>
+    </div>
+    <!-- end of cart-->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="loginbox">
+          <span class="close">&times;</span>
+          
+            <img src="user.jpg" class="user">
+            <h1>Login Form</h1>
+            <br>
+            <form action="loginValidation.php" method="post" name="regist"  onSubmit="return validate()">
+                <p>Username</p>
+                <input type="email" name="username" placeholder="Enter Username">
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Enter Password">
+                <input type="submit" name="submit" value="submit">
+                <a href="#">Lost your password?</a><br>
+                <a id="sigbtn">Don't have an account?</a>
+            </form>
+        </div>
+    </div>
+        <div id="myModal1" class="modal1">
+         <div class="loginbox">
+             <div id="closes">&times;</div>
+             <img src="user.jpg" class="user">
+             <h1>Sign-up Form</h1>
+             <br>
+             <form method="post" name="regist">
+                <p>Username</p>
+                <input type="email" name="email" placeholder="Enter Username">
+                <p>Password</p>
+                <input type="password" name="psw" placeholder="Enter Password">
+                <p>Repeat Password</p>
+                <input type="password" name="psw-repeat" placeholder="Enter Password">
+                <p style="font-size: x-small;">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                
+                <input type="submit" name="Submit" value="Submit" onclick="RegValid.php">
+                
+             </form>
+         </div>
+        </div>
+    
+    <!-- contentful -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
+    <!-- app js -->
+    <script src="app1.js"></script>
+</body>
+</html>

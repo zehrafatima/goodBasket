@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>modal</title>
+        <style>
+            body {
+                /* background-image: url("sky.jpg"); */
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                /* background-color: rgb(0,0,0); Fallback color */
+                /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+                }
+
+            /* Modal Content */
+            /* .modal-content {
+            } */
+
+            /* The Close Button */
+            .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            }
+            
+            .loginbox {
+                /* background-color: #fefefe; */
+                margin: auto;
+                /* padding: 20px; */
+                /* border: 1px solid #888; */
+                /* width: 80%; */
+
+                width: 320px;
+                height: 420px;
+                background: #000000;
+                color: #ffffff;
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                box-sizing: border-box;
+                padding: 70px 30px;
+            }
+
+            .user {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                position: absolute;
+                top: -50px;
+                left: calc(50% - 50px);
+            }
+
+            h1 {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                font-size: 22px;
+            }
+
+            .loginbox p {
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+            }
+
+            .loginbox input {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .loginbox input[type="email"],
+            input[type="password"] {
+                border: none;
+                border-bottom: 1px solid #ffffff;
+                background: transparent;
+                outline: none;
+                height: 40px;
+                color: #ffffff;
+                font-size: 16px;
+            }
+
+            .loginbox input[type="submit"] {
+                border: none;
+                outline: none;
+                height: 40px;
+                background: #fb2525;
+                color: #ffffff;
+                font-size: 18px;
+                border-radius: 20px;
+            }
+
+            .loginbox input[type="submit"]:hover {
+                cursor: pointer;
+                background: #ffc107;
+                color: #000;
+            }
+
+            .loginbox a {
+                text-decoration: none;
+                font-size: 12px;
+                line-height: 20px;
+                color: darkgrey;
+            }
+
+            .loginbox a:hover {
+                color: #ffc107;
+            }
+            </style>
+    </head>
+    <body>
+        <button class="clear-cart banner-btn" id="myBtn">Buy now!</button>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="loginbox">
+              <span class="close">&times;</span>
+              
+                <img src="user.jpg" class="user">
+                <h1>Login Form</h1>
+                <form action="loginValidation.php" method="post" name="regist"  onSubmit="return validate()">
+                    <p>Username</p>
+                    <input type="email" name="username" placeholder="Enter Username">
+                    <p>Password</p>
+                    <input type="password" name="password" placeholder="Enter Password">
+                    <input type="submit" name="submit" value="submit">
+                    <a href="#">Lost your password?</a><br>
+                    <a href="signup.html">Don't have an account?</a>
+                </form>
+            </div>
+            </div>
+          
+        
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+    </body>
+</html>

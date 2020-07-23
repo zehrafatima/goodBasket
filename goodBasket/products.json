@@ -1,0 +1,68 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "potatoes",
+          "price": 4,
+          "image": { "fields": { "file": { "url": "./images/potatoes.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "cucumber",
+          "price": 3,
+          "image": { "fields": { "file": { "url": "./images/cucumber.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "onions",
+          "price": 5,
+          "image": { "fields": { "file": { "url": "./images/onion.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "capsicum",
+          "price": 6,
+          "image": { "fields": { "file": { "url": "./images/capsicum.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "corn",
+          "price": 2,
+          "image": { "fields": { "file": { "url": "./images/corn.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "lettuce",
+          "price": 7.5,
+          "image": { "fields": { "file": { "url": "./images/lettuce.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "broccoli",
+          "price": 8.5,
+          "image": { "fields": { "file": { "url": "./images/broccoli.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "brinjal",
+          "price": 3.5,
+          "image": { "fields": { "file": { "url": "./images/brinjal.jpg" } } }
+        }
+      }
+    ]
+  }

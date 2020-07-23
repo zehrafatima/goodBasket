@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOMM! </title>
+    <script src="https://kit.fontawesome.com/fdd9920942.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            <img src="logo.png" alt="website logo"/>
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END-->
+    <!-- BEECH -->
+    <header class="beech">
+        <div class="banner">
+            <h5 class="banner-title">All the groceries you need!</h5>
+            <button class="banner-btn">Shop now</button>
+        </div>
+    </header>
+    <!-- BEECH END -->
+    <!-- products-->
+    <section class="products">
+        <div class="section-title">
+            <h2>VEGETABLES</h2>
+        </div>
+        <div class="products-center">
+            <!--single prod-->
+            <article class="product">
+                <div class="img-container">
+                    <img src="./images/tomatoes.jpg" alt="product" class="product-img">
+                    <button class="bag-btn" data-id="1">
+                        <i class="fas fa-shopping-cart">
+                        </i>
+                        Add to bag
+                    </button>
+                </div>
+                <h3>Tomatoes</h3>
+                <h4>$3/Kg</h4>
+            </article>
+            <!--end of single prod-->
+            
+        </div>
+    </section>
+    <!--end of products-->
+    <!-- cart-->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>Your cart</h2>
+            <div class="cart-content">
+            <!-- cart item-->
+            <!-- <div class="cart-item">
+                
+            </div> -->
+            <!-- end of cart item-->
+            </div>
+            <div class="cart-footer">
+                <h3>your total: $ <span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">clear cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- end of cart-->
+    <!-- contentful -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
+    <!-- app js -->
+    <script src="app.js"></script>
+</body>
+</html>
